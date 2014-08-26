@@ -1,0 +1,239 @@
+cologrisclaro = #858585
+grisprincipal = #2c2c2c
+
+*
+	padding 0
+	margin 0
+	font-family Arial,Helvetica,sans-serif
+
+header
+	background grisprincipal
+
+nav
+	ul
+		list-style-type none
+		list-style-position inside
+
+		li
+			display block
+			float right
+			padding 30px 32px 0 10px
+			border-left 1px solid cologrisclaro
+		
+			&:first-child
+				padding-right 0
+
+			a
+				color cologrisclaro
+				font-size small				
+				font-weight bold	
+				text-decoration none
+
+				&:hover
+					color #77b8b8
+					
+
+
+/* GALERIA */
+
+#galeria
+	position relative
+	height 335px
+
+	img 
+		position absolute
+		top 0
+		left 0
+		z-index 8
+
+	img.active
+		z-index 10
+
+	img.last-active
+		z-index 9						
+
+
+/* BIENVENIDA */
+
+#bienvenida 
+	h2
+		margin-bottom 40px
+		color #262626
+		font-family Arvo, Georgia, serif
+		font-size xx-large
+
+	p
+		text-align justify	
+
+
+.introduccion
+	color grisprincipal
+	font-size small	
+	font-weight bold
+
+
+
+#logo
+	width 330px
+	height 50px
+	margin-bottom 50px
+	background-image url(../img/logo.jpg)
+	background-repeat no-repeat
+
+	a
+		display block
+		width 100%
+		height 100%
+
+		span
+			display none
+
+
+
+#main	
+	margin-top 50px
+	color #999
+	font-size small
+	line-height 22px
+
+	.introduccion,aside
+		padding-top 58px
+
+	p
+		margin 0 0 20px 0
+
+	aside
+		font-size x-small
+		line-height 16px
+
+
+.separador
+	display block
+	width 100%
+	height 1px
+	border-bottom 1px solid #ebebeb
+
+
+
+/* NOTICIAS */
+
+#noticias		
+	margin-top 30px
+	margin-bottom 30px
+
+	.introduccion
+		padding-top 0
+
+	article
+		img
+			width 220px
+			height 155px
+			border 0
+			margin-bottom 15px
+		p
+			text-align justify	
+
+		a
+			color #77b8b8
+			font-weight bold
+			text-decoration none	
+
+
+/* PIE DE PAGINA*/			
+
+footer
+	background grisprincipal
+	padding-bottom 30px
+	padding-top 30px
+
+	h2
+		color #fff
+		font-family Arvo, Georgia, serif
+		font-size large
+		margin-bottom 15px
+
+	p
+		color #999
+		font-size small
+		line-height 14px
+		margin-bottom 15px
+
+
+	#minilogo
+		background-image url(../img/logo_mini.jpg)
+		background-repeat no-repeat
+		height 30px
+		margin-bottom 20px
+		margin-top 15px
+		width 205px
+		
+		span
+			display none
+
+	#copyright	
+		font-size x-small	
+
+	input
+		background #fff
+		border 0
+		border-radius 2px
+		color grisprincipal
+		font-size medium
+		font-weight bold
+		margin-bottom 10px
+		outline none
+		padding 7px 10px
+		width 245px
+
+
+		&[type='submit']
+			width auto
+			color #fff
+			font-size small
+			background #484848
+			cursor pointer
+
+		&[type='submit']:hover
+			background #85cdd1
+
+	#social
+		ul
+			list-style-type none
+			list-style-position inside
+
+			li
+				display inline-block
+				margin-right 5px
+				background #fc0			
+
+				a
+					display block
+					width 35px
+					height 35px
+					background-image url(../img/iconos_sociales.jpg)
+
+					span
+						display none
+
+
+#ico_facebook
+	background-position 0 0
+
+	&:hover
+		background-position 0 -35px		
+
+#ico_twitter
+	background-position -44px 0
+
+	&:hover
+		background-position -44px -35px
+#ico_youtube
+	background-position -87px 0
+	
+	&:hover
+		background-position -87px -35px
+#ico_rss
+	background-position -130px 0
+	
+	&:hover
+		background-position -135px -35px
